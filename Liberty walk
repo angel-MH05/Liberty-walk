@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberty Walk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #1a1a1a;
+      --secondary-color: #3d3d3d;
+      --accent-color: #a17d5d;
+      --highlight-color: #ececec;
+      --bg-color: #f9f9f9;
+      --text-color: #111;
+      --alt-color: #c4c4c4;
+    }
+    * {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Barlow Condensed', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 4rem;
+    }
+    header p {
+      font-size: 1.5rem;
+      color: var(--alt-color);
+    }
+    nav {
+      background: var(--secondary-color);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: var(--accent-color);
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1300px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2.8rem;
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--accent-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .car-item {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .car-item:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: var(--secondary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+    .contact-form button {
+      background: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: var(--accent-color);
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Liberty Walk</h1>
+    <p>"Diseñamos poder, elegancia y carácter sobre cuatro ruedas"</p>
+  </header>
+
+  <nav>
+    <a href="#intro">Nosotros</a>
+    <a href="#autos">Autos</a>
+    <a href="#interiores">Interiores</a>
+    <a href="#exteriores">Exteriores</a>
+    <a href="#mantenimiento">Mantenimiento</a>
+    <a href="#sucursales">Sucursales</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="intro">
+    <h2>¿Quiénes somos?</h2>
+    <p>En <strong>Liberty Walk</strong> nos dedicamos a transformar automóviles de lujo y deportivos exóticos en piezas únicas. Al igual que grandes casas como <em>Mansory</em>, <em>Brabus</em> o <em>RWB</em>, combinamos artesanía, innovación y diseño para ofrecer una experiencia automotriz superior. Nos especializamos en personalización total: desde carrocerías y acabados hasta interiorismo exclusivo, ingeniería de rendimiento y estilo inigualable.</p>
+  </section>
+
+  <section id="autos">
+    <h2>Autos en venta</h2>
+    <div class="car-grid">
+      <div class="car-item">Porsche 911 GT3 RS</div>
+      <div class="car-item">Bugatti Bolide</div>
+      <div class="car-item">Bugatti EB110 Supersport</div>
+      <div class="car-item">Ferrari SF90 Stradale</div>
+      <div class="car-item">Ferrari LaFerrari</div>
+      <div class="car-item">Ferrari FXX-K</div>
+      <div class="car-item">Lamborghini Huracán STO</div>
+      <div class="car-item">Lamborghini Countach LPI 800-4</div>
+      <div class="car-item">Lamborghini Urus Performante</div>
+      <div class="car-item">Lamborghini Diablo SV</div>
+      <div class="car-item">Lamborghini Murciélago LP670-4 SV</div>
+      <div class="car-item">Maserati MC20 Cielo</div>
+      <div class="car-item">BMW M5 Competition</div>
+      <div class="car-item">Porsche 918 Spyder</div>
+      <div class="car-item">Porsche 917K</div>
+      <div class="car-item">Pagani Huayra R</div>
+      <div class="car-item">McLaren P1 GTR</div>
+    </div>
+  </section>
+
+  <section id="interiores">
+    <h2>Personalización de interiores</h2>
+    <ul>
+      <li>Acabados en fibra de carbono, aluminio cepillado o maderas nobles</li>
+      <li>Asientos deportivos en cuero napa, Alcantara o tela técnica</li>
+      <li>Tapizados con bordados personalizados</li>
+      <li>Colores de cinturones a elección</li>
+      <li>Volantes racing o retro con detalles exclusivos</li>
+      <li>Tableros en piel, fibra de carbono o digitalizados</li>
+      <li>Iluminación ambiental RGB programable</li>
+      <li>Techos con cielo estrellado, Alcantara o sunroof adaptado</li>
+    </ul>
+  </section>
+
+  <section id="exteriores">
+    <h2>Modificaciones exteriores</h2>
+    <ul>
+      <li>Suspensiones de aire, electrónicas, ajustables o deportivas</li>
+      <li>Frenos cerámicos, de carbono o de alto rendimiento</li>
+      <li>Rines personalizados forjados en aluminio o fibra</li>
+      <li>Carrocerías anchas estilo widebody en fibra de carbono</li>
+      <li>Pintura tricapa, efecto perla o acabados matte/satin</li>
+      <li>Wraps completos con diseños exclusivos</li>
+      <li>Difusores, alerones, cofres, splitters personalizados</li>
+      <li>Iluminación LED exterior custom</li>
+    </ul>
+  </section>
+
+  <section id="mantenimiento">
+    <h2>Servicios de mantenimiento</h2>
+    <ul>
+      <li>Cambio y ajuste de piezas de alto rendimiento</li>
+      <li>Diagnóstico electrónico especializado</li>
+      <li>Mantenimiento preventivo y correctivo</li>
+      <li>Revisión y servicio de motor, suspensión, frenos</li>
+      <li>Servicio de detailing interior y exterior premium</li>
+      <li>Restauración de autos clásicos</li>
+      <li>Reprogramación de centralitas (ECU tuning)</li>
+      <li>Pick-up y entrega en domicilio (opcional)</li>
+    </ul>
+  </section>
+
+  <section id="sucursales">
+    <h2>Sucursales</h2>
+    <ul>
+      <li>Alemania - Berlín (Lun-Vie: 9:00 - 18:00)</li>
+      <li>Reino Unido - Londres (Lun-Vie: 8:30 - 17:30)</li>
+      <li>Italia - Milán (Lun-Sáb: 10:00 - 19:00)</li>
+      <li>Japón - Tokio (Lun-Vie: 9:00 - 18:00)</li>
+      <li>España - Madrid (Lun-Vie: 9:00 - 18:00)</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Visítanos en Instagram: <a href="https://instagram.com/hrra_jose" target="_blank">@hrra_jose</a></p>
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensaje enviado. ¡Gracias por contactarnos!');">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea rows="5" placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Liberty Walk. Excelencia y diseño sin límites.</p>
+  </footer>
+</body>
+</html>
